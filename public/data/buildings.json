@@ -1,0 +1,113 @@
+[
+  {
+    "building": "Burj Khalifa",
+    "country": "United Arab Emirates",
+    "city": "Dubai",
+    "height_m": 828,
+    "height_ft": 2717,
+    "height_px": 276,
+    "floors": 163,
+    "completed": 2010,
+    "image": "/img/buildings/01.jpg"
+  },
+  {
+    "building": "International Commerce Centre",
+    "country": "China",
+    "city": "Hong Kong",
+    "height_m": 484,
+    "height_ft": 1588,
+    "height_px": 161,
+    "floors": 108,
+    "completed": 2010,
+    "image": "/img/buildings/06.jpg"
+  },
+  {
+    "building": "KK100",
+    "country": "China",
+    "city": "Shenzhen",
+    "height_m": 442,
+    "height_ft": 1449,
+    "height_px": 147,
+    "floors": 100,
+    "completed": 2011,
+    "image": "/img/buildings/10.jpg"
+  },
+  {
+    "building": "Makkah Royal Clock Tower",
+    "country": "Saudi Arabia",
+    "city": "Mecca",
+    "height_m": 601,
+    "height_ft": 1972,
+    "height_px": 200,
+    "floors": 120,
+    "completed": 2012,
+    "image": "/img/buildings/02.jpg"
+  },
+  {
+    "building": "One World Trade Center",
+    "country": "United States",
+    "city": "New York City",
+    "height_m": 541,
+    "height_ft": 1776,
+    "height_px": 180,
+    "floors": 94,
+    "completed": 2014,
+    "image": "/img/buildings/03.jpg"
+  },
+  {
+    "building": "Petronas Twin Towers",
+    "country": "Malaysia",
+    "city": "Kuala Lumpur",
+    "height_m": 452,
+    "height_ft": 1483,
+    "height_px": 151,
+    "floors": 88,
+    "completed": 1998,
+    "image": "/img/buildings/07.jpg"
+  },
+  {
+    "building": "Shanghai World Financial Center",
+    "country": "China",
+    "city": "Shanghai",
+    "height_m": 492,
+    "height_ft": 1614,
+    "height_px": 164,
+    "floors": 101,
+    "completed": 2008,
+    "image": "/img/buildings/05.jpg"
+  },
+  {
+    "building": "Taipei 101",
+    "country": "Taiwan",
+    "city": "Taipei",
+    "height_m": 508,
+    "height_ft": 1667,
+    "height_px": 169,
+    "floors": 101,
+    "completed": 2004,
+    "image": "/img/buildings/04.jpg"
+  },
+  {
+    "building": "Willis Tower",
+    "country": "United States",
+    "city": "Chicago",
+    "height_m": 442,
+    "height_ft": 1451,
+    "height_px": 147,
+    "floors": 108,
+    "completed": 1974,
+    "image": "/img/buildings/09.jpg"
+  },
+  {
+    "building": "Zifeng Tower",
+    "country": "China",
+    "city": "Nanjing",
+    "height_m": 450,
+    "height_ft": 1476,
+    "height_px": 150,
+    "floors": 66,
+    "completed": 2010,
+    "image": "/img/buildings/08.jpg"
+  }
+]
+
