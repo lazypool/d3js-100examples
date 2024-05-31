@@ -19,3 +19,9 @@
 .bar:hover {
 	fill: tomato
 }
+
+.chart-caption {
+	width: inherit;
+	text-align: center;
+	font-size: 24px;
+}

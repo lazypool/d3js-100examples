@@ -16,5 +16,71 @@
     "beampsrc": "/img/beamp/fifa_worldcup.jpg",
     "caption": "FIFA 世界杯",
     "description": "国际足联世界杯 (FIFA World Cup) 是世界上最大的单项体育赛事，由国际足联 209 个成员协会的成年男子国家队参加。自 1930 年首届比赛以来，除 1942 年和 1946 年因第二次世界大战未举办外，每四年举办一次。"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "全球人口增长",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "Tokyo 城轨交通",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "全球森林覆盖变化",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "奥运会奖牌分布",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "世界各国 GDP 比较",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "全球能源消费",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "全球海洋塑料污染",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "世界语言分布",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "世界各国幸福指数",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "全球 CO2 排放量",
+    "description": "404 NOT FOUND"
+  },
+  {
+    "route": "/visual/notfound",
+    "beampsrc": "/img/beamp/notfound.jpg",
+    "caption": "全球贫困率变化",
+    "description": "404 NOT FOUND"
   }
 ]

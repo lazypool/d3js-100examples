@@ -25,6 +25,7 @@ export default function ZaatariRefugeePage() {
       <h1>Zaatari Refugee Population and Shelter Types</h1>
       <div className="flex-row-container">
         <div className="area-chart-container">
+          <div className="chart-caption">Camps Populations</div>
           <TimeAreaChart
             size={{ width: 750, height: 400 }}
             margin={{ top: 20, right: 20, bottom: 40, left: 50 }}
@@ -35,6 +36,7 @@ export default function ZaatariRefugeePage() {
           />
         </div>
         <div className="bar-chart-container">
+          <div className="chart-caption">Type of Shelter</div>
           <VerticalBarChart
             size={{ width: 300, height: 400 }}
             margin={{ top: 20, right: 20, bottom: 40, left: 50 }}
