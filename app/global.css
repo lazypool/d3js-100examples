@@ -42,7 +42,7 @@ html, body {
 /* 侧边导航栏 & 图标 */
 
 .sidebar-nav {
-  width: 18%;
+  width: 15%;
   height: 100%;
   background-color: #f0f0f0;
 }  
@@ -93,7 +93,7 @@ html, body {
 
 .content-main {  
 	padding: 20px;
-	width: 88%;
+	width: 85%;
 	overflow-y: scroll;
 }
 

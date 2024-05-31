@@ -1,0 +1,26 @@
+.subpage {
+	display: flex;
+	flex-direction: row;
+}
+
+.img-container {
+	padding: 20px;
+}
+
+.img-container img {
+	object-fit: cover;
+	height: 450px;
+}
+
+.info-container {
+	padding: 20px;
+}
+
+.bar {
+	fill: black;
+	cursor: pointer;
+}
+
+.bar:hover {
+	fill: tomato;
+}
