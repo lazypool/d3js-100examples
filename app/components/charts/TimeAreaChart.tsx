@@ -2,6 +2,7 @@
 
 import * as d3 from "d3";
 import { useEffect, useRef } from "react";
+import TimeTooltips from "../utils/TimeTooltips";
 
 export default function TimeAreaChart({
   size = { width: 600, height: 500 },
@@ -11,14 +12,16 @@ export default function TimeAreaChart({
     { id: 1, date: "2013-01-15", value: 57250.0 },
     { id: 2, date: "2013-01-16", value: 58576.0 },
   ],
-  timeformat = "%Y %m",
+  timeformat = "%Y-%m-%d",
   fillcolor = "gray",
+  showTooltips = false,
 }: {
   size: { width: number; height: number };
   margin: { top: number; right: number; bottom: number; left: number };
   data: Array<{ id: number; date: string; value: number }>;
   timeformat: string;
   fillcolor: string;
+  showTooltips: boolean;
 }) {
   const svgRef = useRef(null);
   const width = size.width + margin.left + margin.right;
@@ -62,5 +65,19 @@ export default function TimeAreaChart({
     svg.append("g").call(d3.axisLeft(yAxis));
   }, [data]);
 
-  return <svg ref={svgRef}></svg>;
+  return (
+    <div className="time-area-chart-container">
+      <svg ref={svgRef}></svg>
+      {showTooltips && (
+        <TimeTooltips
+          data={data}
+          xAxis={xAxis}
+          yAxis={yAxis}
+          size={size}
+          margin={margin}
+          svgRef={svgRef}
+        />
+      )}
+    </div>
+  );
 }

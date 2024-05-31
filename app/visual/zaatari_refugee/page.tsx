@@ -29,8 +29,9 @@ export default function ZaatariRefugeePage() {
             size={{ width: 750, height: 400 }}
             margin={{ top: 20, right: 20, bottom: 40, left: 50 }}
             data={population}
-            timeformat="%Y %m"
-            fillcolor="darkred"
+            timeformat="%Y-%m"
+            fillcolor="orange"
+            showTooltips={true}
           />
         </div>
         <div className="bar-chart-container">
