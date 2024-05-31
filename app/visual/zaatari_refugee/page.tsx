@@ -17,6 +17,7 @@ export default function ZaatariRefugeePage() {
     id: key,
     tag: d.type,
     value: d.percentage,
+    text: `${(d.percentage * 100).toFixed(2)}%`,
   }));
 
   return (
@@ -25,8 +26,8 @@ export default function ZaatariRefugeePage() {
       <div className="flex-row-container">
         <div className="area-chart-container">
           <TimeAreaChart
-            size={{ width: 800, height: 400 }}
-            margin={{ top: 10, right: 10, bottom: 40, left: 50 }}
+            size={{ width: 750, height: 400 }}
+            margin={{ top: 20, right: 20, bottom: 40, left: 50 }}
             data={population}
             timeformat="%Y %m"
             fillcolor="darkred"
@@ -35,9 +36,12 @@ export default function ZaatariRefugeePage() {
         <div className="bar-chart-container">
           <VerticalBarChart
             size={{ width: 300, height: 400 }}
-            margin={{ top: 10, right: 10, bottom: 40, left: 50 }}
+            margin={{ top: 20, right: 20, bottom: 40, left: 50 }}
             data={shelterTypes}
             padding={0.3}
+            showText={true}
+            showAxis={true}
+            fontsize={16}
           />
         </div>
       </div>

@@ -14,6 +14,7 @@ export default function VerticalBarChart({
   padding = 0.5,
   showText = false,
   fontsize = 10,
+  showAxis = true,
 }: {
   size: { width: number; height: number };
   margin: { top: number; right: number; bottom: number; left: number };
@@ -21,6 +22,7 @@ export default function VerticalBarChart({
   padding: number;
   showText: boolean;
   fontsize: number;
+  showAxis: boolean;
 }) {
   const svgRef = useRef(null);
   const width = size.width + margin.left + margin.right;
@@ -57,15 +59,14 @@ export default function VerticalBarChart({
       .attr("height", (d) => size.height - yAxis(d.value));
 
     if (showText) {
-      const xOffset = xAxis.bandwidth() / 2 + fontsize / 2;
-      const yOffset = fontsize * 1.5;
       svg
         .selectAll("text")
         .data(data)
         .enter()
         .append("text")
-        .attr("x", (d) => (xAxis(d.tag) || 0) + xOffset)
-        .attr("y", (d) => yAxis(d.value) + yOffset)
+        .attr("text-anchor", "middle")
+        .attr("x", (d) => (xAxis(d.tag) || 0) + xAxis.bandwidth() / 2)
+        .attr("y", (d) => yAxis(d.value))
         .attr("font-size", fontsize)
         .text((d) => d.text);
     }
@@ -75,6 +76,11 @@ export default function VerticalBarChart({
       .attr("transform", `translate(${0},${size.height})`)
       .call(d3.axisBottom(xAxis));
     svg.append("g").call(d3.axisLeft(yAxis));
+
+    if (!showAxis) {
+      svg.selectAll("line").attr("stroke", "none");
+      svg.selectAll("path").attr("stroke", "none");
+    }
   }, [data]);
 
   return <svg ref={svgRef}></svg>;

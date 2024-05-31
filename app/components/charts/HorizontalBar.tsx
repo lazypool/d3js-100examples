@@ -14,6 +14,7 @@ export default function HorizontalBarChart({
   padding = 0.5,
   showText = false,
   fontsize = 10,
+  showAxis = true,
   onBarClick,
 }: {
   size: { width: number; height: number };
@@ -22,6 +23,7 @@ export default function HorizontalBarChart({
   padding: number;
   showText: boolean;
   fontsize: number;
+  showAxis: boolean;
   onBarClick?: (
     event: MouseEvent,
     data: { id: number; tag: string; value: number },
@@ -67,14 +69,14 @@ export default function HorizontalBarChart({
       });
 
     if (showText) {
-      const xOffset = fontsize * Math.max(...data.map((d) => d.text.length));
       const yOffset = yAxis.bandwidth() / 2 + fontsize / 2;
       svg
         .selectAll("text")
         .data(data)
         .enter()
         .append("text")
-        .attr("x", (d) => xAxis(d.value) - xOffset)
+        .attr("text-anchor", "end")
+        .attr("x", (d) => xAxis(d.value) - fontsize)
         .attr("y", (d) => (yAxis(d.tag) || 0) + yOffset)
         .attr("font-size", fontsize)
         .text((d) => d.text);
@@ -85,6 +87,11 @@ export default function HorizontalBarChart({
       .attr("transform", `translate(${0},${size.height})`)
       .call(d3.axisBottom(xAxis));
     svg.append("g").call(d3.axisLeft(yAxis));
+
+    if (!showAxis) {
+      svg.selectAll("line").attr("stroke", "none");
+      svg.selectAll("path").attr("stroke", "none");
+    }
   }, [data]);
 
   return <svg ref={svgRef}></svg>;

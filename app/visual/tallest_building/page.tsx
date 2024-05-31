@@ -24,12 +24,13 @@ export default function TallestBuildingPage() {
       <div className="flex-row-container">
         <div className="chart-container">
           <HorizontalBarChart
-            size={{ width: 600, height: 500 }}
+            size={{ width: 500, height: 500 }}
             margin={{ top: 0, right: 0, bottom: 0, left: 180 }}
             data={data}
             padding={0.5}
             showText={true}
             fontsize={16}
+            showAxis={false}
             onBarClick={SelectBar}
           />
         </div>
