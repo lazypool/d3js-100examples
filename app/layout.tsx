@@ -1,5 +1,5 @@
 import "./global.css";
-import RouteBeampsData from "./RouteBeampsData";
+import RouteBeampsData from "./RouteBeampsData.json";
 
 export default function RootLayout({
   children,

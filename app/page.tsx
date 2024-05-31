@@ -1,4 +1,4 @@
-import RouteBeampsData from "./RouteBeampsData";
+import RouteBeampsData from "./RouteBeampsData.json";
 
 export default function HomePage() {
   return (
