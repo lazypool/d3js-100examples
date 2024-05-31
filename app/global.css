@@ -150,3 +150,28 @@ html, body {
 .beamp-container:hover div .beamp-description {
 	display: block;
 }
+
+
+
+/* 通用 flex 布局 */
+.flex-row-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-col-container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+/* 子页面共用样式 */
+.subpage {
+	margin: auto;
+	padding: auto;
+}
+
+.subpage h1 {
+	margin-bottom: 20px;
+}

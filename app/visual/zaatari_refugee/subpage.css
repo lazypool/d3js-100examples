@@ -1,0 +1,13 @@
+.area-chart-container {
+	margin: 10px;
+	border: solid;
+}
+
+.bar-chart-container {
+	margin: 10px;
+	border: solid;
+}
+
+.bar {
+	fill: darkred;
+}
