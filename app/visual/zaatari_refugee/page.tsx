@@ -27,7 +27,7 @@ export default function ZaatariRefugeePage() {
         <div className="area-chart-container">
           <div className="chart-caption">Camps Populations</div>
           <TimeAreaChart
-            size={{ width: 750, height: 400 }}
+            size={{ width: 750, height: 380 }}
             margin={{ top: 20, right: 20, bottom: 40, left: 50 }}
             data={population}
             timeformat="%Y-%m"
@@ -38,7 +38,7 @@ export default function ZaatariRefugeePage() {
         <div className="bar-chart-container">
           <div className="chart-caption">Type of Shelter</div>
           <VerticalBarChart
-            size={{ width: 300, height: 400 }}
+            size={{ width: 300, height: 380 }}
             margin={{ top: 20, right: 20, bottom: 40, left: 50 }}
             data={shelterTypes}
             padding={0.3}

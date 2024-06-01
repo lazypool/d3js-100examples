@@ -59,14 +59,14 @@ export default function TimeTooltips({
 
     svg
       .on("mousemove", (event) => {
-        const [mouseX, _] = d3.pointer(event);
+        const [mouseX, mouseY] = d3.pointer(event);
         const date = xAxis.invert(mouseX - margin.left);
         const dateString = date.toISOString().split("T")[0];
         const d = data.find((d) => d.date === dateString);
 
         if (d) {
           setContent(`Date: ${d.date}<br/>Value: ${d.value.toFixed(2)}`);
-          setPosition({ x: event.pageX, y: event.pageY });
+          setPosition({ x: mouseX + margin.left, y: mouseY + margin.top });
           setVisible(true);
 
           const x = margin.left + xAxis(new Date(d.date));

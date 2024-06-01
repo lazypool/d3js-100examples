@@ -1,5 +1,9 @@
-import "./global.css";
+"use client";
+
 import RouteBeampsData from "./RouteBeampsData.json";
+import SimpleBar from "simplebar-react";
+import "simplebar-react/dist/simplebar.min.css";
+import "./global.css";
 
 export default function RootLayout({
   children,
@@ -15,20 +19,32 @@ export default function RootLayout({
 
         <div className="dashboard-layout">
           <nav className="sidebar-nav">
-            <ul>
+            <SimpleBar
+              className="sidebar-nav-lst"
+              style={{ maxHeight: "70%" }}
+              autoHide={false}
+            >
               {RouteBeampsData.map((data, key) => (
                 <li key={key}>
                   <a href={data.route}>{data.caption}</a>
                 </li>
               ))}
-            </ul>
+            </SimpleBar>
 
             <div className="avatar-container">
-              <img className="avatar" src="/img/avatar.jpg" />
+              <a href="https://github.com/lazypool">
+                <img className="avatar" src="/img/avatar.jpg" />
+              </a>
             </div>
           </nav>
 
-          <main className="content-main">{children}</main>
+          <SimpleBar
+            className="content-main"
+            style={{ maxHeight: "100%" }}
+            autoHide={false}
+          >
+            {children}
+          </SimpleBar>
         </div>
       </body>
     </html>

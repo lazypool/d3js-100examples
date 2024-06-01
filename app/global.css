@@ -19,9 +19,11 @@ html, body {
 
 .title {
 	padding: 15px;
-	background-color: tomato;
-  height: 10%;
+	background: linear-gradient(to right, dodgerblue, tomato);
+  height: 15%;
 	width: 100%;
+	font-size: 40px;
+	border-radius: 0 0 10px 10px;
 }
 
 .title a {
@@ -33,7 +35,7 @@ html, body {
 .dashboard-layout {
   display: flex;
   flex-direction: row;
-  height: 90%;
+  height: 85%;
 	width: 100%;
 }  
 
@@ -45,15 +47,6 @@ html, body {
   width: 15%;
   height: 100%;
   background-color: #f0f0f0;
-}  
-  
-.sidebar-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; 
-	height: 70%;
-	max-height: 70%;
-  overflow-y: scroll;
 }  
   
 .sidebar-nav li a {
@@ -68,7 +61,7 @@ html, body {
   padding: 10px; 
   text-decoration: none;
   color: #f0f0f0;
-	background-color: #000;
+	background-color: green;
 }  
 
 .avatar-container {
@@ -78,6 +71,7 @@ html, body {
   height: 20%;
 	justify-content: center;
 	items-align: center;
+	cursor: pointer;
 }
 
 .avatar {
@@ -95,7 +89,6 @@ html, body {
 .content-main {  
 	padding: 20px;
 	width: 85%;
-	overflow-y: scroll;
 }
 
 .beamp-container-wrapper {
@@ -106,7 +99,7 @@ html, body {
 }
 
 .beamp-container {
-  flex: 0 0 calc(33.33% - 20px);
+  flex: 0 0 calc(33.33% - 10px);
   margin-right: 10px;
   margin-bottom: 10px;
   position: relative;
@@ -174,4 +167,23 @@ html, body {
 
 .subpage h1 {
 	margin-bottom: 20px;
+}
+
+
+
+/* 滚动条样式 */
+
+.content-main .simplebar-scrollbar::before {
+	background: linear-gradient(to bottom, red, orange);
+	border-radius: 10px;
+}
+
+.sidebar-nav-lst .simplebar-scrollbar::before {
+	background: linear-gradient(to bottom, blue, green);
+	border-radius: 10px;
+}
+
+.simplebar-scrollbar {
+	width: 16px;
+	height: 16px;
 }

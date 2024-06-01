@@ -1,15 +1,13 @@
 .area-chart-container {
 	margin: 10px;
 	border: solid;
-}
-
-.time-area-chart-container {
 	height: 500px;
 }
 
 .bar-chart-container {
 	margin: 10px;
 	border: solid;
+	height: 500px;
 }
 
 .bar {
