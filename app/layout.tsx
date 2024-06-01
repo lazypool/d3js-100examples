@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <h1 className="title">
-          <Link href="/">数据可视化 100 例</Link>
+          <Link href="/">D3.js 数据可视化的 100 个案例</Link>
         </h1>
 
         <div className="dashboard-layout">
