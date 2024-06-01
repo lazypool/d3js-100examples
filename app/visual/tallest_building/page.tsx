@@ -4,6 +4,7 @@ import HorizontalBarChart from "@/app/components/charts/HorizontalBar";
 import BuildingsData from "./buildings.json";
 import { useState } from "react";
 import "./subpage.css";
+import Image from "next/image";
 
 export default function TallestBuildingPage() {
   BuildingsData.sort((a, b) => a.height_px - b.height_px);
@@ -20,7 +21,7 @@ export default function TallestBuildingPage() {
 
   return (
     <div className="subpage">
-      <h1>The World's Top10 Tallest Buildings</h1>
+      <h1>The World&apos;s Top10 Tallest Buildings</h1>
       <div className="flex-row-container">
         <div className="chart-container">
           <HorizontalBarChart
@@ -35,7 +36,12 @@ export default function TallestBuildingPage() {
           />
         </div>
         <div className="img-container">
-          <img src={selected.image} />
+          <Image
+            src={selected.image}
+            width={300}
+            height={500}
+            alt={selected.building}
+          ></Image>
         </div>
         <div className="info-container">
           <h1>{selected.building}</h1>

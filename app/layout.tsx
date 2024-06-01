@@ -4,6 +4,8 @@ import RouteBeampsData from "./RouteBeampsData.json";
 import SimpleBar from "simplebar-react";
 import "simplebar-react/dist/simplebar.min.css";
 import "./global.css";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function RootLayout({
   children,
@@ -14,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <h1 className="title">
-          <a href="/">数据可视化 100 例</a>
+          <Link href="/">数据可视化 100 例</Link>
         </h1>
 
         <div className="dashboard-layout">
@@ -26,14 +28,19 @@ export default function RootLayout({
             >
               {RouteBeampsData.map((data, key) => (
                 <li key={key}>
-                  <a href={data.route}>{data.caption}</a>
+                  <Link href={data.route}>{data.caption}</Link>
                 </li>
               ))}
             </SimpleBar>
 
             <div className="avatar-container">
               <a href="https://github.com/lazypool">
-                <img className="avatar" src="/img/avatar.jpg" />
+                <Image
+                  src="/img/avatar.jpg"
+                  width={100}
+                  height={100}
+                  alt="avatar"
+                ></Image>
               </a>
             </div>
           </nav>
