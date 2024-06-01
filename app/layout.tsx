@@ -34,8 +34,12 @@ export default function RootLayout({
             </SimpleBar>
 
             <div className="avatar-container">
-              <a href="https://github.com/lazypool">
+              <a
+                href="https://github.com/lazypool"
+                style={{ display: "block" }}
+              >
                 <Image
+                  className="avatar"
                   src="/img/avatar.jpg"
                   width={100}
                   height={100}
