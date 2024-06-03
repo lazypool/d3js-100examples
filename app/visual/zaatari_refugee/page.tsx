@@ -1,10 +1,9 @@
 "use client";
 
-import TimeAreaChart from "@/app/components/charts/TimeAreaChart";
+import TimeAreaChart from "@/app/components/charts/TimeArea";
 import VerticalBarChart from "@/app/components/charts/VerticalBar";
 import PopulationData from "./zaatari_population.json";
 import ShelterTypeData from "./zaatari_sheltertype.json";
-import { useState } from "react";
 import "./subpage.css";
 
 export default function ZaatariRefugeePage() {
