@@ -18,28 +18,6 @@ export default function TimeTooltips({
   margin: { top: number; right: number; bottom: number; left: number };
   svgRef: React.RefObject<SVGSVGElement>;
 }) {
-  const [content, setContent] = useState("");
-  const [visible, setVisible] = useState(false);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [style, setStyle] = useState<React.CSSProperties>({});
-
-  useEffect(() => {
-    if (visible) {
-      setStyle({
-        position: "absolute",
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-        background: "white",
-        border: "1px solid #ccc",
-        padding: "10px",
-        pointerEvents: "none",
-        opacity: 1,
-      });
-    } else {
-      setStyle({ opacity: 0 });
-    }
-  }, [visible, position]);
-
   useEffect(() => {
     const svg = d3.select(svgRef.current);
 
@@ -57,6 +35,18 @@ export default function TimeTooltips({
       .attr("x2", margin.left + size.width)
       .style("opacity", 0);
 
+    const tooltipDate = svg
+      .append("text")
+      .attr("x", margin.left)
+      .attr("y", margin.right)
+      .style("opacity", 0);
+
+    const tooltipValue = svg
+      .append("text")
+      .attr("x", margin.left)
+      .attr("y", margin.right)
+      .style("opacity", 0);
+
     svg
       .on("mousemove", (event) => {
         const [mouseX, mouseY] = d3.pointer(event);
@@ -65,10 +55,6 @@ export default function TimeTooltips({
         const d = data.find((d) => d.date === dateString);
 
         if (d) {
-          setContent(`Date: ${d.date}<br/>Value: ${d.value.toFixed(2)}`);
-          setPosition({ x: mouseX + margin.left, y: mouseY + margin.top });
-          setVisible(true);
-
           const x = margin.left + xAxis(new Date(d.date));
           const y = yAxis(d.value) + margin.top;
 
@@ -87,25 +73,36 @@ export default function TimeTooltips({
             .attr("stroke", "black")
             .attr("stroke-width", 1.5)
             .raise();
+
+          tooltipDate
+            .attr("x", mouseX + 10)
+            .attr("y", mouseY + 10)
+            .style("opacity", 1)
+            .text(`Date: ${d.date}`)
+            .raise();
+
+          tooltipValue
+            .attr("x", mouseX + 10)
+            .attr("y", mouseY + 30)
+            .style("opacity", 1)
+            .text(`Value: ${d.value.toFixed(2)}`)
+            .raise();
         }
       })
       .on("mouseleave", () => {
-        setVisible(false);
         verticalLine.style("opacity", 0).raise();
         horizontalLine.style("opacity", 0).raise();
+        tooltipDate.style("opacity", 0).raise();
+        tooltipValue.style("opacity", 0).raise();
       });
 
     return () => {
       verticalLine.remove();
       horizontalLine.remove();
+      tooltipDate.remove();
+      tooltipValue.remove();
     };
   }, [data, xAxis, yAxis, svgRef]);
 
-  return (
-    <div
-      style={style}
-      className="tooltip"
-      dangerouslySetInnerHTML={{ __html: content }}
-    ></div>
-  );
+  return <div className="tooltip"></div>;
 }
