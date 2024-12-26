@@ -102,7 +102,7 @@ export default function TimeTooltips({
       tooltipDate.remove();
       tooltipValue.remove();
     };
-  }, [data, xAxis, yAxis, svgRef]);
+  }, [data, xAxis, yAxis, svgRef, margin, size]);
 
   return <div className="tooltip"></div>;
 }

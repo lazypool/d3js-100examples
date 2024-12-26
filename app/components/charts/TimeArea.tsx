@@ -63,7 +63,18 @@ export default function TimeAreaChart({
       .style("text-anchor", "end")
       .attr("transform", "rotate(-45)");
     svg.append("g").call(d3.axisLeft(yAxis));
-  }, [data]);
+  }, [
+    data,
+    fillcolor,
+    margin,
+    size,
+    timeFormat,
+    area,
+    height,
+    width,
+    xAxis,
+    yAxis,
+  ]);
 
   return (
     <div className="time-area-chart-container">

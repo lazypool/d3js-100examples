@@ -81,7 +81,18 @@ export default function VerticalBarChart({
       svg.selectAll("line").attr("stroke", "none");
       svg.selectAll("path").attr("stroke", "none");
     }
-  }, [data]);
+  }, [
+    data,
+    fontsize,
+    margin,
+    size,
+    showAxis,
+    showText,
+    height,
+    width,
+    xAxis,
+    yAxis,
+  ]);
 
   return <svg ref={svgRef}></svg>;
 }

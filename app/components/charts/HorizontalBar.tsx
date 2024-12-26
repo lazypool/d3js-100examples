@@ -92,7 +92,19 @@ export default function HorizontalBarChart({
       svg.selectAll("line").attr("stroke", "none");
       svg.selectAll("path").attr("stroke", "none");
     }
-  }, [data]);
+  }, [
+    data,
+    fontsize,
+    margin,
+    size,
+    showAxis,
+    showText,
+    onBarClick,
+    height,
+    width,
+    xAxis,
+    yAxis,
+  ]);
 
   return <svg ref={svgRef}></svg>;
 }
