@@ -1,0 +1,222 @@
+[
+  {
+    "edtion": "2014 FIFA World Cup Brazil ™",
+    "year": "2014",
+    "location": "Brazil",
+    "winner": "Germany",
+    "teams": "32",
+    "matches": "64",
+    "goals": "171",
+    "average_goals": "2.7",
+    "average_attendance": "52918"
+  },
+  {
+    "edtion": "2010 FIFA World Cup South Africa ™",
+    "year": "2010",
+    "location": "South Africa",
+    "winner": "Spain",
+    "teams": "32",
+    "matches": "64",
+    "goals": "145",
+    "average_goals": "2.3",
+    "average_attendance": "49669"
+  },
+  {
+    "edtion": "2006 FIFA World Cup Germany ™",
+    "year": "2006",
+    "location": "Germany",
+    "winner": "Italy",
+    "teams": "32",
+    "matches": "64",
+    "goals": "147",
+    "average_goals": "2.3",
+    "average_attendance": "52491"
+  },
+  {
+    "edtion": "2002 FIFA World Cup Korea/Japan ™",
+    "year": "2002",
+    "location": "Korea/Japan",
+    "winner": "Brazil",
+    "teams": "32",
+    "matches": "64",
+    "goals": "161",
+    "average_goals": "2.5",
+    "average_attendance": "42268"
+  },
+  {
+    "edtion": "1998 FIFA World Cup France ™",
+    "year": "1998",
+    "location": "France",
+    "winner": "France",
+    "teams": "32",
+    "matches": "64",
+    "goals": "171",
+    "average_goals": "2.7",
+    "average_attendance": "43517"
+  },
+  {
+    "edtion": "1994 FIFA World Cup USA ™",
+    "year": "1994",
+    "location": "USA",
+    "winner": "Brazil",
+    "teams": "24",
+    "matches": "52",
+    "goals": "141",
+    "average_goals": "2.7",
+    "average_attendance": "68991"
+  },
+  {
+    "edtion": "1990 FIFA World Cup Italy ™",
+    "year": "1990",
+    "location": "Italy",
+    "winner": "Germany",
+    "teams": "24",
+    "matches": "52",
+    "goals": "115",
+    "average_goals": "2.2",
+    "average_attendance": "48388"
+  },
+  {
+    "edtion": "1986 FIFA World Cup Mexico ™",
+    "year": "1986",
+    "location": "Mexico",
+    "winner": "Argentina",
+    "teams": "24",
+    "matches": "52",
+    "goals": "132",
+    "average_goals": "2.5",
+    "average_attendance": "46039"
+  },
+  {
+    "edtion": "1982 FIFA World Cup Spain ™",
+    "year": "1982",
+    "location": "Spain",
+    "winner": "Italy",
+    "teams": "24",
+    "matches": "52",
+    "goals": "146",
+    "average_goals": "2.8",
+    "average_attendance": "40571"
+  },
+  {
+    "edtion": "1978 FIFA World Cup Argentina ™",
+    "year": "1978",
+    "location": "Argentina",
+    "winner": "Argentina",
+    "teams": "16",
+    "matches": "38",
+    "goals": "102",
+    "average_goals": "2.7",
+    "average_attendance": "40678"
+  },
+  {
+    "edtion": "1974 FIFA World Cup Germany ™",
+    "year": "1974",
+    "location": "Germany",
+    "winner": "Germany",
+    "teams": "16",
+    "matches": "38",
+    "goals": "97",
+    "average_goals": "2.6",
+    "average_attendance": "49098"
+  },
+  {
+    "edtion": "1970 FIFA World Cup Mexico ™",
+    "year": "1970",
+    "location": "Mexico",
+    "winner": "Brazil",
+    "teams": "16",
+    "matches": "32",
+    "goals": "95",
+    "average_goals": "3",
+    "average_attendance": "50124"
+  },
+  {
+    "edtion": "1966 FIFA World Cup England ™",
+    "year": "1966",
+    "location": "England",
+    "winner": "England",
+    "teams": "16",
+    "matches": "32",
+    "goals": "89",
+    "average_goals": "2.8",
+    "average_attendance": "48847"
+  },
+  {
+    "edtion": "1962 FIFA World Cup Chile ™",
+    "year": "1962",
+    "location": "Chile",
+    "winner": "Brazil",
+    "teams": "16",
+    "matches": "32",
+    "goals": "89",
+    "average_goals": "2.8",
+    "average_attendance": "27911"
+  },
+  {
+    "edtion": "1958 FIFA World Cup Sweden ™",
+    "year": "1958",
+    "location": "Sweden",
+    "winner": "Brazil",
+    "teams": "16",
+    "matches": "35",
+    "goals": "126",
+    "average_goals": "3.6",
+    "average_attendance": "23423"
+  },
+  {
+    "edtion": "1954 FIFA World Cup Switzerland ™",
+    "year": "1954",
+    "location": "Switzerland",
+    "winner": "Germany",
+    "teams": "16",
+    "matches": "26",
+    "goals": "140",
+    "average_goals": "5.4",
+    "average_attendance": "29561"
+  },
+  {
+    "edtion": "1950 FIFA World Cup Brazil ™",
+    "year": "1950",
+    "location": "Brazil",
+    "winner": "Uruguay",
+    "teams": "13",
+    "matches": "22",
+    "goals": "88",
+    "average_goals": "4",
+    "average_attendance": "47511"
+  },
+  {
+    "edtion": "1938 FIFA World Cup France ™",
+    "year": "1938",
+    "location": "France",
+    "winner": "Italy",
+    "teams": "15",
+    "matches": "18",
+    "goals": "84",
+    "average_goals": "4.7",
+    "average_attendance": "20872"
+  },
+  {
+    "edtion": "1934 FIFA World Cup Italy ™",
+    "year": "1934",
+    "location": "Italy",
+    "winner": "Italy",
+    "teams": "16",
+    "matches": "17",
+    "goals": "70",
+    "average_goals": "4.1",
+    "average_attendance": "21352"
+  },
+  {
+    "edtion": "1930 FIFA World Cup Uruguay ™",
+    "year": "1930",
+    "location": "Uruguay",
+    "winner": "Uruguay",
+    "teams": "13",
+    "matches": "18",
+    "goals": "70",
+    "average_goals": "3.9",
+    "average_attendance": "32808"
+  }
+]

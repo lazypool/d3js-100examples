@@ -1,5 +1,7 @@
 "use client";
 
+import FIFAWorldCupData from "./fifa_worldcup.json";
+
 export default function FifaWorldCupPage() {
 	return (
 	<div className="subpage">
