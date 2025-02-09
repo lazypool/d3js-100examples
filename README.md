@@ -10,6 +10,13 @@
 
 ## 目前已有的案例
 
-- 世界最高建筑
-- Zaatari 难民营
-- FIFA 世界杯
+- 世界最高建筑 🗼
+- Zaatari 难民营 ⛺
+- FIFA 世界杯（doing 👷）
+
+## 有关运行说明
+
+- 第一次运行，可在解压后进入 project 文件夹，并运行 npm intall 下载依赖。
+- 如需编译后部署，可使用 npm run build 和 npm run start。
+- 如需以开发者模式预览，可以使用 npm run dev。
+- 以上两种方式都会在本机 3000 端口开放站点，可通过浏览器访问。
